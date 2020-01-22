@@ -105,12 +105,17 @@ public class Main {
 //      NumberPalindrome.isPalindrome(12421);
 
 //        System.out.println(FirstLastDigitSum.sumFirstAndLastDigit(8513));
- //       EvenDigitSum.getEvenDigitSum(12223);
+        //       EvenDigitSum.getEvenDigitSum(12223);
 //        System.out.println(EvenDigitSum.getEvenDigitSum(245622));
 //        System.out.println(GreatestCommonDivisor.getGreatestCommonDivisor(222,555));
 //        FactorPrinter.printFactors(32);
+
+//       System.out.println(PerfectNumber.isPerfectNumber(6));
+
+//        System.out.println(NumberToWords.reverse(154));
+
+        NumberToWords.numberToWords(-5);
+
+//        System.out.println(NumberToWords.getDigitCount(-5));
     }
-
-
-
 }
