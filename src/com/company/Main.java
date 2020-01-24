@@ -114,8 +114,21 @@ public class Main {
 
 //        System.out.println(NumberToWords.reverse(154));
 
-        NumberToWords.numberToWords(-5);
+//        NumberToWords.numberToWords(-5);
 
 //        System.out.println(NumberToWords.getDigitCount(-5));
+
+ //       System.out.println(FlourPacker.canPack(1,0,4));
+//        System.out.println(PrimeNumber.isPrime(31));
+//     System.out.println(LargestPrime.getLargestPrime(45));
+//       System.out.println(LargestPrime.getLargestPrime(345));
+//DiagonalStar.printSquareStar(6);
+//        Scannera.Skaner();
+
+//        InputChallenge.inputChellenges();
+//MinAndMaxInputChallenge.minAndMax();
+      InputCalculator.inputThenPrintSumAndAverage();
+
+
     }
 }
