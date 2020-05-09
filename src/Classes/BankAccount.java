@@ -14,6 +14,26 @@ public class BankAccount {
     private String customerName;
     private String email;
     private String phoneNumber;
+    public BankAccount()
+    {
+        this(234,0.0,"Bob","bob@wp.pl","724102207");
+        System.out.println("pusty konstruktor zostal wywolany");
+    }
+    public BankAccount(int accountNumber,double balance,String customerName, String email, String phoneNumber)
+    {
+        this.accountNumber =accountNumber;
+        this.balance = balance;
+        this.customerName =customerName;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
+    }
+
+    public BankAccount(String customerName, String email, String phoneNumber) {
+        this.customerName = customerName;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
+    }
+
     public int getAccountNumber()
     {
         return this.accountNumber;
@@ -56,13 +76,21 @@ public class BankAccount {
     }
     public void deposite (double zdeponuj)
     {
-        df.format(balance+=zdeponuj);
+        this.balance+=zdeponuj;
+        System.out.println("po zdeponowaniu "+ zdeponuj + " mamy nowy balans "+this.balance );
+
     }
     public void winthdraw (double wyjmij)
     {
-        df.format(balance-=wyjmij);
+        if(this.balance-wyjmij<0)
+        {
+            System.out.println("można tylko " +this.balance+ " wyjąć z konta ");
+        }
+        else{
+        df.format(this.balance-=wyjmij);
+            System.out.println("po wyjeciu kwoty "+ wyjmij + " na koncie pozostało "+this.balance);
     }
-
+}
 
 
 

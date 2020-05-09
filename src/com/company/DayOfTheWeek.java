@@ -3,6 +3,7 @@ package com.company;
 public class DayOfTheWeek {
     public static void printDayOfTheWeek(int day)
     {
+
         switch (day)
         {
             case 0:
